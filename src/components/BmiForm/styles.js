@@ -9,11 +9,11 @@ export const MyPaper = styled(Paper) (({ theme }) => ({
     border: '1px #9F0825',
     [theme.breakpoints.down('md')]: {
         marginBottom:theme.spacing(5),
-        height: 300
+        width: 345
     },
     [theme.breakpoints.down('sm')]: {
         marginBottom:theme.spacing(5),
-        width: 280
+        width: 300
     },
     "& .MuiPaper-root": {
         alignItems: "center",

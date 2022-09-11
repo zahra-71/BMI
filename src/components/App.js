@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Grid, Typography, Fade} from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { v4 as uuid } from 'uuid';
-import './App.css';
 
 // components
 import { getData, storeData } from '../helpers/localStorage';
@@ -11,15 +10,16 @@ import Chart from './Chart/Chart';
 
 // styles
 import { MyResetButton, MyTypography } from './styles';
+import './App.css';
 
 function App() {
 
   const initialState = getData('Data') || []
   const [state, setState] = useState(initialState);
-  
+ 
   console.log("app")
   console.log(state)
-
+ 
   useEffect(()=>{
     storeData('Data', state)
   }, [state])
@@ -80,8 +80,9 @@ function App() {
           <Typography>هیچ اطلاعاتی موجود نمی‌باشد.</Typography>
         )}
       </div>
-      {getData('lastData') ? (
-        <MyResetButton onClick={handleUndo} variant="outlined">ریست</MyResetButton>
+      {(getData('lastData') && getData('lastData').length !== state.length)? 
+      (
+        <MyResetButton onClick={handleUndo} variant="outlined">بازگرداندن</MyResetButton>
       ):(
        ''
       )}

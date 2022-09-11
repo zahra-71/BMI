@@ -31,7 +31,7 @@ Click clone/download the repository on your local machine.
 ## Features
 
 1. Responsive Design
-2.  Chart for data comparison
+2. Chart for data comparison
 3. Display data
 4. Ability to delete data
-5. Ability to reset data
+5. Ability to undo data

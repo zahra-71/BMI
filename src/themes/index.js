@@ -1,6 +1,21 @@
 import { createTheme } from '@mui/material/styles';
 import defaultTheme from "./default";
 
+const fonts = {
+    typography: {
+        fontFamily: 'Shabnam',
+    },
+   components: {
+       MuiScopedCssBaseLine: {
+           styleOverrides: {
+               root: {
+                   fontFamily: 'Shabnam'
+               }
+           }
+       }
+   } 
+}
+
 const overrides = {
     typography: {
         h1: {
@@ -10,7 +25,8 @@ const overrides = {
 }
 const themes = {
     default: createTheme({
-        ...defaultTheme, ...overrides
+        ...defaultTheme, ...overrides, ...fonts
     })
 }
+
 export default themes;

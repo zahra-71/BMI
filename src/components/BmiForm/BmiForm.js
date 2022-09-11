@@ -15,7 +15,7 @@ function BmiForm({change}) {
   const [state, setState] = useState(initialValues)
 
   const handleChange = (e) => {
-    const date = new Date().toLocaleString().split(',')[0]
+    const date = new Date().toLocaleDateString('fa-Ir').split(',')[0]
     setState({
       ...state,
       [e.target.name]: e.target.value,
@@ -60,4 +60,5 @@ function BmiForm({change}) {
     
   )
 }
+
 export default BmiForm;

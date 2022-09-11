@@ -1,6 +1,6 @@
 import { CardContent, Typography } from '@mui/material'
 import React from 'react'
-import DeleteForeverIcon from '@mui/icons-material/DeleteForever';
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever'
 
 // styles
 import { MyRemoveButton, MyCard } from './styles'
@@ -15,7 +15,7 @@ function Info({bmi, weight, height, date, id, remove}) {
   return (
     <MyCard>
       <CardContent>
-        <Typography>BMI: {bmi}</Typography>
+        <Typography>شاخص توده بدنی: {bmi}</Typography>
         <Typography>وزن: {weight}</Typography>
         <Typography>قد: {height}</Typography>
         <Typography>تاریخ: {date}</Typography>

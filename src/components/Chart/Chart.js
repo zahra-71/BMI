@@ -18,11 +18,12 @@ const CustomizedXAxisTick = (props) => {
 
 const CustomizedYAxisTick = (props) => {
   const {x, y, payload} = props;
+  const YAxios = new Number(payload.value).toLocaleString('fa-ir')
   return (
     <g transform={`translate(${x},${y})`}>
       <text x={0} y={5}
         textAnchor="start"
-        fill="#666">{payload.value}</text>
+        fill="#666">{YAxios}</text>
     </g>
   );
 }
@@ -37,7 +38,7 @@ function Chart ({data}) {
       elevation={8}
       sx={{borderRadius: "10px"}}
     >
-      <ResponsiveContainer width={340} height={340}>
+      <ResponsiveContainer>
         <LineChart
           stroke="#606161"
           data={newData}

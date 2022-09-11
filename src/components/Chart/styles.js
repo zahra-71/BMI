@@ -6,9 +6,9 @@ export const MyPaper = styled(Paper) (({ theme }) => ({
     paddingRight: theme.spacing(3),
     margin: "auto",
     height: 350,
-    width: 360,
+    width: 350,
     [theme.breakpoints.down('md')]: {
-        width: 340,
+        width: 330,
     },
     [theme.breakpoints.down('sm')]: {
         marginBottom:theme.spacing(5),

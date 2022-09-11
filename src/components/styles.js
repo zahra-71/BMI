@@ -17,4 +17,3 @@ export const MyTypography = styled(Typography) (({ theme}) => ({
         fontSize: "20px"
     }
 }))
-

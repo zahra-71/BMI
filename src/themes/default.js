@@ -1,4 +1,3 @@
-
 const primary = "#536DFE";
 const secondary = "#FF5C93";
 const warning = "#FFC260";
@@ -34,4 +33,5 @@ const defaultTheme = {
         
     }
 }
+
 export default defaultTheme;
