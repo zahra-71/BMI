@@ -12,9 +12,7 @@ The purpose of this project was to get familiar with Hooks.
 
 Click clone/download the repository on your local machine.
 
-### **Install dependencies**
-
-### `npm test`
+### **Install dependencies**`
 
 ### `npm install`
 
